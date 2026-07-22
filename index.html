@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DecodeLabs Learning Hub | Full Stack Project 1</title>
+<meta name="description" content="A responsive learning hub for full stack interns to track skill-building modules.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="brand">Decode<span>Labs</span> Hub</p>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" aria-label="Introduction">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">Project 1 · Responsive Frontend</span>
+      <h1>Build your Full Stack foundation, one module at a time.</h1>
+      <p class="lead">A clean, mobile-first learning hub interns use to track HTML, CSS and JavaScript milestones before moving on to backend work.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#modules">Start a module</a>
+        <a class="btn btn-ghost" href="#progress">View progress</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-label="Weekly progress summary">
+      <div class="stat"><span>Modules complete</span><span>4 / 6</span></div>
+      <div class="bar"><i style="width:66%"></i></div>
+      <div class="stat"><span>Current streak</span><span>5 days</span></div>
+      <div class="bar"><i style="width:80%"></i></div>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+  <main id="main-content" class="primary">
+    <section id="modules" aria-labelledby="modules-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="modules-heading">Learning modules</h2>
+          <p>Filter by topic to focus your session today.</p>
+        </div>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter modules by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="html">HTML</button>
+        <button class="filter-btn" data-filter="css">CSS</button>
+        <button class="filter-btn" data-filter="js">JavaScript</button>
+        <button class="filter-btn" data-filter="access">Accessibility</button>
+      </div>
+
+      <div class="module-grid" id="moduleGrid">
+
+        <article class="module-card" data-category="html">
+          <span class="tag">HTML5</span>
+          <h3>Semantic Landmarks</h3>
+          <p>Structure pages with header, nav, main, article and footer so screen readers and search engines understand the content.</p>
+          <footer>
+            <span>45 min</span>
+            <span class="progress-pill">Done <div class="bar" style="width:50px"><i style="width:100%"></i></div></span>
+          </footer>
+        </article>
+
+        <article class="module-card" data-category="css">
+          <span class="tag">CSS3</span>
+          <h3>Grid &amp; Flexbox</h3>
+          <p>Use CSS Grid for whole-page layout and Flexbox for compact components like navbars and cards.</p>
+          <footer>
+            <span>60 min</span>
+            <span class="progress-pill">Done <div class="bar" style="width:50px"><i style="width:100%"></i></div></span>
+          </footer>
+        </article>
+
+        <article class="module-card" data-category="css">
+          <span class="tag">CSS3</span>
+          <h3>Fluid Typography</h3>
+          <p>Scale headings smoothly across devices with clamp() instead of rigid breakpoint overrides.</p>
+          <footer>
+            <span>30 min</span>
+            <span class="progress-pill">In progress <div class="bar" style="width:50px"><i style="width:70%"></i></div></span>
+          </footer>
+        </article>
+
+        <article class="module-card" data-category="js">
+          <span class="tag">JavaScript</span>
+          <h3>Basic State &amp; Events</h3>
+          <p>Wire up interactive elements — toggles, filters, and simple counters — using vanilla JavaScript.</p>
+          <footer>
+            <span>50 min</span>
+            <span class="progress-pill">In progress <div class="bar" style="width:50px"><i style="width:40%"></i></div></span>
+          </footer>
+        </article>
+
+        <article class="module-card" data-category="access">
+          <span class="tag">Accessibility</span>
+          <h3>WCAG Essentials</h3>
+          <p>Keyboard focus states, color contrast, and alt text that make an interface usable for everyone.</p>
+          <footer>
+            <span>35 min</span>
+            <span class="progress-pill">Not started <div class="bar" style="width:50px"><i style="width:0%"></i></div></span>
+          </footer>
+        </article>
+
+        <article class="module-card" data-category="html">
+          <span class="tag">HTML5</span>
+          <h3>Forms &amp; Validation</h3>
+          <p>Build accessible forms with proper labels and native validation before layering on JavaScript.</p>
+          <footer>
+            <span>40 min</span>
+            <span class="progress-pill">Not started <div class="bar" style="width:50px"><i style="width:0%"></i></div></span>
+          </footer>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <aside class="sidebar" id="progress" aria-labelledby="sidebar-heading">
+    <h3 id="sidebar-heading">This week</h3>
+    <ul>
+      <li>Modules completed <span class="badge">2</span></li>
+      <li>Hours logged <span class="badge">3.1h</span></li>
+      <li>Next milestone <span class="badge">Badge 1</span></li>
+      <li>Cohort rank <span class="badge">Top 15%</span></li>
+    </ul>
+  </aside>
+</div>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div id="about">
+      <h3>DecodeLabs Learning Hub</h3>
+      <p>Built for the DecodeLabs Full Stack Internship — Project 1: Responsive Frontend Interface. Semantic HTML5, Grid + Flexbox layout, and vanilla JavaScript. No frameworks.</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p><a href="mailto:decodelabs.tech@gmail.com">decodelabs.tech@gmail.com</a></p>
+      <p><a href="tel:+918933006408">+91 89330 06408</a></p>
+    </div>
+    <div>
+      <h3>Location</h3>
+      <p>Greater Lucknow, India</p>
+      <p><a href="https://www.decodelabs.tech">www.decodelabs.tech</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 DecodeLabs Internship Program</span>
+    <span>Batch 2026</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
