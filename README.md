@@ -19,12 +19,16 @@ Create a responsive frontend interface for a simple web application using HTML, 
 - CSS3 (Grid, Flexbox, Media Queries)
 - Vanilla JavaScript
 
-## 📱 Responsive Breakpoints
-| Device  | Breakpoint |
-|---------|-----------|
-| Mobile  | Default (single column) |
-| Tablet  | 768px+ |
-| Desktop | 1024px+ |
+## 🖼️ Screenshots
+
+### Hero Section
+![Hero Section](screenshot-hero.png)
+
+### Learning Modules Grid
+![Learning Modules](screenshot-modules.png)
+
+### Filter in Action + Footer
+![Filter and Footer](screenshot-footer.png)
 
 ## 👩‍💻 Author
 **Sakshi Kumari**  
